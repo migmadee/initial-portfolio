@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfoilio Website",
+  title: "Migma Dema Sherpa",
   description: "A portfolio website is a personal or professional online platform that showcases your skills, work, projects, and experiences.",
 };
 
