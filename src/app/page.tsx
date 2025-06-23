@@ -87,7 +87,22 @@ export default function Home() {
       <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
+
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+        <div className="flex justify-center items-center py-12">
+
+<Image
+  src="/halfphoto.jpeg"
+  alt="Profile"
+  width={240}
+  height={240}
+  className="rounded-full object-cover shadow-lg transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:shadow-2xl"
+/>
+
+</div>
+
+
+
             Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Migma Dema Sherpa</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-300">
@@ -115,27 +130,77 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">About Me</h2>
+      <section id="about" className="py-20 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-40">
+          <div className="absolute top-10 left-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
+          <div className="absolute top-40 right-10 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-1000"></div>
+          <div className="absolute bottom-10 left-1/2 w-72 h-72 bg-pink-200 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-2000"></div>
+        </div>
+
+        <div className="max-w-6xl mx-auto px-6 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-gray-800 via-blue-600 to-purple-600 bg-clip-text text-transparent">
+              About Me
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
+          </div>
+
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                I&apos;m a passionate full-stack developer and done my internship of creating
-                digital solutions that make a difference. I love coding and making simple, beautiful, and intuitive website designs.
-              </p>
-              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                When I&apos;m not coding, you can find me exploring new technologies, writing, drawing and spending quality time with loved ones.
-              </p>
-              <div className="flex gap-4">
-                <a href="https://github.com/migmadee" target="_blank" aria-label="GitHub Profile" rel="noopener noreferrer" className="p-3 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors">
-                  <Github className="w-6 h-6 text-gray-700" />
+            <div className="space-y-6">
+              <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 border border-white/50 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-start space-x-4">
+                  <div className="w-2 h-16 bg-gradient-to-b from-blue-500 to-purple-500 rounded-full flex-shrink-0"></div>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    I&apos;m a passionate full-stack developer who completed my internship at Athang Training Academy. 
+                    I specialize in creating digital solutions that make a real difference in people&apos;s lives.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 border border-white/50 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-start space-x-4">
+                  <div className="w-2 h-16 bg-gradient-to-b from-purple-500 to-pink-500 rounded-full flex-shrink-0"></div>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    Beyond coding, I&apos;m constantly exploring new technologies, expressing creativity through writing and drawing, 
+                    and cherishing moments with the people who matter most.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-10 border border-white/50 shadow-2xl">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-gray-800 mb-2">Let&apos;s Connect</h3>
+                <p className="text-gray-600">Ready to collaborate or just say hello?</p>
+              </div>
+
+              <div className="grid grid-cols-3 gap-4">
+                <a 
+                  href="https://github.com/migmadee" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label="GitHub Profile"
+                  className="group relative p-6 bg-gradient-to-br from-gray-100 to-gray-200 hover:from-gray-800 hover:to-black rounded-2xl transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                >
+                  <Github className="w-8 h-8 text-gray-700 group-hover:text-white transition-colors mx-auto" />
                 </a>
-                <a href="https://www.linkedin.com/in/migmademasherpa" target="_blank" aria-label="LinkedIn Profile" rel="noopener noreferrer" className="p-3 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors">
-                  <Linkedin className="w-6 h-6 text-gray-700" />
+
+                <a 
+                  href="https://www.linkedin.com/in/migmademasherpa" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label="LinkedIn Profile"
+                  className="group relative p-6 bg-gradient-to-br from-blue-100 to-blue-200 hover:from-blue-600 hover:to-blue-800 rounded-2xl transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                >
+                  <Linkedin className="w-8 h-8 text-blue-700 group-hover:text-white transition-colors mx-auto" />
                 </a>
-                <a href="mailto:migmadema079@gmail.com" aria-label="Send Email" className="p-3 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors">
-                  <Mail className="w-6 h-6 text-gray-700" />
+
+                <a 
+                  href="mailto:migmadema079@gmail.com" 
+                  aria-label="Send Email"
+                  className="group relative p-6 bg-gradient-to-br from-purple-100 to-purple-200 hover:from-purple-600 hover:to-purple-800 rounded-2xl transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                >
+                  <Mail className="w-8 h-8 text-purple-700 group-hover:text-white transition-colors mx-auto" />
                 </a>
               </div>
             </div>
@@ -150,7 +215,10 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">Featured Projects</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div
+                key={index}
+                className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              >
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -172,10 +240,20 @@ export default function Home() {
                     ))}
                   </div>
                   <div className="flex gap-4">
-                    <a href={project.github} className="flex items-center gap-2 text-gray-700 hover:text-blue-500 transition-colors">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-gray-700 hover:text-blue-500 transition-colors"
+                    >
                       <Github className="w-5 h-5" /> Code
                     </a>
-                    <a href={project.demo} className="flex items-center gap-2 text-gray-700 hover:text-blue-500 transition-colors">
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-gray-700 hover:text-blue-500 transition-colors"
+                    >
                       <ExternalLink className="w-5 h-5" /> Demo
                     </a>
                   </div>

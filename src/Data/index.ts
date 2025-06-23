@@ -1,3 +1,4 @@
+
 export const projects = [
    
     { 
@@ -47,3 +48,4 @@ export const projects = [
    { name: "GitHub", color: "bg-gray-800", textColor: "text-white" },
    { name: "Next.JS", color: "bg-gray-800", textColor: "text-white" }
  ];
+ 
