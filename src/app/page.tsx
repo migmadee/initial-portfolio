@@ -2,7 +2,7 @@
 
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
-import { Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
+import { Github, Linkedin, Mail, ExternalLink, Heart } from 'lucide-react';
 import { projects } from '@/Data';
 import FloatingSkills from '@/component/FloatingSkill';
 import Image from 'next/image';
@@ -310,8 +310,15 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="py-8 bg-gray-900 text-white text-center">
-        <p>&copy; 2025 Migma Dema Sherpa. All rights reserved.</p>
+      {/* Footer */}
+      <footer className="py-12 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <p className="text-black">
+            © 2025 Migma Dema Sherpa. Crafted with{' '}
+            <Heart className="inline w-4 h-4 text-red-400" />{' '}
+            and lots of coffee.
+          </p>
+        </div>
       </footer>
     </>
   );
